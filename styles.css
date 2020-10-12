@@ -1,0 +1,27 @@
+body {
+  margin: 0%;
+}
+
+nav {
+  color: #0a3641;
+  display: inline-block;
+  text-align: center;
+  background-color: #cb9a21;
+  position: fixed;
+}
+
+nav a {
+  font-family: Tahoma, verdana, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  background-color: #dddddd;
+}
