@@ -1,6 +1,11 @@
 body {
   margin: 0%;
 }
+.logo {
+  position: fixed;
+  max-width: 300px;
+  margin: 0 auto;
+}
 
 nav {
   color: #0a3641;
