@@ -1,9 +1,11 @@
 body {
   margin: 0%;
 }
+/*header*/
+
 .logo {
   position: fixed;
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -22,10 +24,15 @@ nav a {
   padding: 10px;
   font-weight: bold;
 }
+nav li {
+  display: inline-block;
+}
 
 nav a:hover {
   text-decoration: underline;
 }
+
+/*main*/
 
 h1 {
   background-color: #dddddd;
