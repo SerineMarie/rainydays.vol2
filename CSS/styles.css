@@ -5,11 +5,14 @@ body {
 
 /*header*/
 
+header {
+  background-color: #cb9a21;
+}
 .logo {
   /* position: fixed;*/
   max-width: 50%;
   background-color: #cb9a21;
-  padding: 5% 50% 5% 0%;
+  /*padding: 5% 50% 5% 0%;*/
   margin: 0 auto;
 }
 
@@ -22,7 +25,8 @@ nav {
   margin: 0 auto;
 }
 
-nav a {
+nav a,
+footer li {
   font-family: Tahoma, verdana, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -30,7 +34,8 @@ nav a {
   font-weight: bold;
   color: #0a3641;
 }
-nav li {
+nav li,
+footer li {
   display: inline-block;
   text-align: center;
   padding-left: 15%;
@@ -61,7 +66,6 @@ h1 {
 
 div {
   display: flex;
-  flex: 1;
 }
 
 h2 {
@@ -81,12 +85,11 @@ section {
   font-family: Georgia, Times, serif;
   font-size: 20px;
   color: #0a3641;
-  padding: 0px;
+  flex: 1;
 }
 
-.sale,
-.newin,
-.inspo {
+.img {
+  justify-content: space-around;
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
@@ -102,9 +105,4 @@ section {
 
 footer {
   background-color: #cb9a21;
-}
-footer ul {
-  display: inline-block;
-  color: #0a3641;
-  text-decoration: none;
 }
