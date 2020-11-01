@@ -3,8 +3,7 @@
     <head>
         <script
         src="https://kit.fontawesome.com/9bbccdf472.js"
-        crossorigin="anonymous"
-      ></script>
+        crossorigin="anonymous"></script>
       <title> Rainydays</title>
       <meta name="discription" content="Login page" />
       <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
@@ -14,12 +13,18 @@
     <body>
 
         <header>
-            <a href="index.html"
-             ><img class="logo" src="images/rainydayslogo.png"></a>
-             <i class="fas fa-search"></i>
-             <a href="favorite.html"><i class="fas fa-heart"></i></a>
-             <a href="login.html"><i class="fas fa-user"></i></a>
-             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <section class="header">
+                <div class="item logo"><a href="index.html"><img class="logo" src="images/rainydayslogo.png"></a>
+                </div>
+                <div class="item">
+                    
+                    <a href="favorite.html"><i class="fas fa-heart"></i></a>
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>   
+                    <a href="search.html"><i class="fas fa-search"></i></a>
+                    <input class="search-txt" type="text"  placeholder="Search">
+                </div>
+            </section>
 
             <nav>
                 <ul>
@@ -32,20 +37,22 @@
                 </ul>
             </nav>
         </header>
-        <p class="login">log in</p>
-        <form action="submit.php" method="GET">
-                <label for=email>Your email address</label>
-                <input type="email" name="email" placeholder="example@gmail.com" class="form__input">
-                <label for="password">Your password</label>
-                <input type="password" name="password" class="form__input">
-                <input type="submit" value="continue" class="continuebtn">
-        </form>
-
+        <main>
+            <p class="login">log in</p>
+            <form action="loggedin.html" method="GET">
+                <label for=email>Your email address </label>
+                <input type="email" name="email" placeholder="example@gmail.com" class="input">
+                <label for="password">Your password </label>
+                <input type="password" name="password" class="input">
+                <input type="submit" value="continue" class="input continuebtn">
+            </form>
+            <p class="loggedin"></p>
+    </main>
         <footer>
             <ul>
-              <li><a href="about.html" class="active">About</a></li>
-              <li><a href="contact.html" class="active">Contact</a></li>
-              <li><a href="stores.html" class="active">Stores</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="stores.html">Stores</a></li>
             </ul>
             Copyright &copy; 
         </footer>

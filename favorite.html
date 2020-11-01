@@ -3,8 +3,7 @@
     <head>
         <script
         src="https://kit.fontawesome.com/9bbccdf472.js"
-        crossorigin="anonymous"
-      ></script>
+        crossorigin="anonymous"></script>
       <title> Rainydays</title>
       <meta name="discription" content="Favorite page" />
       <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
@@ -14,12 +13,18 @@
     <body>
 
         <header>
-            <a href="index.html"
-             ><img class="logo" src="images/rainydayslogo.png"></a>
-             <i class="fas fa-search"></i>
-             <a href="favorite.html"><i class="fas fa-heart"></i></a>
-             <a href="login.html"><i class="fas fa-user"></i></a>
-             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <section class="header">
+                <div class="item logo"><a href="index.html"><img class="logo" src="images/rainydayslogo.png"></a>
+                </div>
+                <div class="item">
+                    
+                    <a href="favorite.html"><i class="fas fa-heart"></i></a>
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>   
+                    <a href="search.html"><i class="fas fa-search"></i></a>
+                    <input class="search-txt" type="text" placeholder="Search">
+                </div>
+            </section>
 
             <nav>
                 <ul>
@@ -33,14 +38,57 @@
 
         </header>
         <main>
-            <p class="login">favorite</p>
+            <p class="login">favorite items</p>
+            <main class="favoritelayout">
+                <img src="images/women1.jpg" class="img" alt="blue jacket with white stripes"> 
+                <div class="small-item">
+                    <p class="info">NAME: Ski blue mountain</p>
+                    <p class="info">PRICE: $59.00</p>
+                    <p class="info">COLOR:</p>
+                    <div class="blueball"></div>
+                    <input type="radio" name="color" class="color" value="blue" id="blue">
+                    <label for="blue" alt="color blue"></label>
+                    <p class="info">SIZE:</p>
+                    <input type="radio" name="size" class="size" value="m" id="m">
+                    <label for="m">M</label>
+                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
+                </div>
+                
+                <img src="images/man1.jpg" class="img" alt="grey and blue stripes">
+                <div class="small-item">
+                    <p class="info">NAME: Ski blue mountain</p>
+                    <p class="info">PRICE: $59.00</p>
+                    <p class="info">COLOR:</p>
+                    <div class="blueball"></div>
+                    <p class="info">SIZE:</p>
+                    <input type="radio" name="color" class="color" value="blue" id="blue">
+                    <label for="blue" alt="color blue"></label>
+                    <input type="radio" name="size" class="size" value="l" id="l">
+                    <label for="l">L</label>
+                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
+                </div>
+                <img src="images/children2.jpg" class="img" alt="black and white jacket">
+                <div class="small-item">
+                    <p class="info">NAME: Ski blue mountain</p>
+                    <p class="info">PRICE: $59.00</p>
+                    <p class="info">COLOR:</p>
+                    <div class="blueball"></div>
+                    <input type="radio" name="color" class="color" value="blue" id="blue">
+                    <label for="blue" alt="color blue"></label>
+                    <p class="info">SIZE:</p>
+                    <input type="radio" name="size" class="size" value="s" id="s">
+                    <label for="s">S</label>
+                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
+
+                </div>
+            </main>
 
         </main>
         <footer>
             <ul>
-              <li><a href="about.html" class="active">About</a></li>
-              <li><a href="contact.html" class="active">Contact</a></li>
-              <li><a href="stores.html" class="active">Stores</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="stores.html">Stores</a></li>
             </ul>
             Copyright &copy; 
         </footer>
