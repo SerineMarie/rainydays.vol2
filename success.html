@@ -3,27 +3,27 @@
     <head>
         <script
         src="https://kit.fontawesome.com/9bbccdf472.js"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"
+      ></script>
       <title> Rainydays</title>
-      <meta name="discription" content="Favorite items page" />
+      <meta name="discription" content="payment success" />
       <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
       <link href="CSS/styles.css" rel="stylesheet">
     </head>
-
     <body>
+
         <header>
             <section class="header">
                 <div class="item logo"><a href="index.html"><img class="logo" src="images/rainydayslogo.png"></a>
                 </div>
-                <div class="item">
+                <div class="item"> 
                     <a href="favorite.html"><i class="fas fa-heart"></i></a>
                     <a href="login.html"><i class="fas fa-user"></i></a>
                     <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>   
                     <a href="search.html"><i class="fas fa-search"></i></a>
-                    <input class="search-txt" type="text" placeholder="Search">
+                    <input class="search-txt" type="text"placeholder="Search">
                 </div>
             </section>
-
             <nav>
                 <ul>
                     <a href="index.html"><i class="fas fa-arrow-left"></i></a>
@@ -31,14 +31,22 @@
                     <li><a href="women.html">Women</a> </li>
                     <li><a href="men.html">Men</a></li>
                     <li><a href="children.html">Children</a></li>
-                </ul> 
+                </ul>
             </nav>
         </header>
-        <main>
-            <p class="login">favorite items</p>
-            <section class="favoritelayout">
-                <img src="images/women1.jpg" class="img" alt="blue jacket with white stripes"> 
-                <div class="small-item">
+        <main class="success">
+            <section class="layout">
+                <h1 class="layoutone">
+                    <p id="login">payment success</p>
+                    <p class="successnumber">ordernumber: 123456789</p>
+                    <p class="successnumber">payment: $177.00</p>
+                    <p class="successinfo">arrives in 3-2 business days</p>
+                    <p class="successinfo">confirmation sent to your email address</p>
+                </h1>
+                <div class="layouttwo">
+                    <img src="images/women1.jpg" class="img layoutimg" alt="blue jacket with white stripes">
+                </div>
+                <div class="layoutthree">
                     <p class="info">NAME: Ski blue mountain</p>
                     <p class="info">PRICE: $59.00</p>
                     <p class="info">COLOR:</p>
@@ -48,10 +56,11 @@
                     <p class="info">SIZE:</p>
                     <input type="radio" name="size" class="size" value="m" id="m">
                     <label for="m">M</label>
-                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
                 </div>
-                <img src="images/man1.jpg" class="img" alt="grey and blue stripes">
-                <div class="small-item">
+                <div class="layoutfour">
+                    <img src="images/man1.jpg" class="img layoutimg" alt="grey and blue stripes">
+                </div>
+                <div class="layoutfive">
                     <p class="info">NAME: Ski blue mountain</p>
                     <p class="info">PRICE: $59.00</p>
                     <p class="info">COLOR:</p>
@@ -61,10 +70,12 @@
                     <label for="blue" alt="color blue"></label>
                     <input type="radio" name="size" class="size" value="l" id="l">
                     <label for="l">L</label>
-                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
                 </div>
-                <img src="images/children2.jpg" class="img" alt="black and white jacket">
-                <div class="small-item">
+                
+                <div class="layoutsix">
+                    <img src="images/children2.jpg" class="img layoutimg" alt="black and white jacket">
+                </div>
+                <div class="layoutseven">
                     <p class="info">NAME: Ski blue mountain</p>
                     <p class="info">PRICE: $59.00</p>
                     <p class="info">COLOR:</p>
@@ -74,7 +85,6 @@
                     <p class="info">SIZE:</p>
                     <input type="radio" name="size" class="size" value="s" id="s">
                     <label for="s">S</label>
-                    <button class="delete">delete form favorite <i class="fas fa-trash"></i></button>
                 </div>
             </section>
         </main>
