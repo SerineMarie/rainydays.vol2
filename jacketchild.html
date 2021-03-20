@@ -39,7 +39,9 @@
         <div class="item">
           <a href="favorite.html"><i class="fas fa-heart"></i></a>
           <a href="login.html"><i class="fas fa-user"></i></a>
-          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="cart.html"
+            ><span>0</span><i class="fas fa-shopping-cart"></i
+          ></a>
           <a href="search.html"><i class="fas fa-search"></i></a>
           <input class="search-txt" type="text" placeholder="Search" />
         </div>
@@ -96,14 +98,18 @@
           <label for="xl">XL</label>
         </div>
         <div class="right-item">
-          <a href="favorite.html"
-            ><button class="addbutton">
-              favorite <i class="fas fa-heart heart"></i></button
-          ></a>
-          <a href="cart.html"
-            ><button class="addbutton">
-              add to cart<i class="fas fa-shopping-cart cart"></i></button
-          ></a>
+          <div class="addfav">
+            <a href="favorite.html"
+              ><button class="addbutton" id="addbutton">
+                favorite <i class="fas fa-heart heart"></i></button
+            ></a>
+          </div>
+          <div class="addcart">
+            <a href="cart.html"
+              ><button class="addbutton" id="addCart">
+                add to cart<i class="fas fa-shopping-cart cart"></i></button
+            ></a>
+          </div>
         </div>
       </section>
       <div class="otherimg">
@@ -127,5 +133,6 @@
       </ul>
       Copyright &copy;
     </footer>
+    <script src="js/addto.js"></script>
   </body>
 </html>

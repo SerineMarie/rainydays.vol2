@@ -37,7 +37,9 @@
         <div class="item">
           <a href="favorite.html"><i class="fas fa-heart"></i></a>
           <a href="login.html"><i class="fas fa-user"></i></a>
-          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="cart.html"
+          ><span>0</span><i class="fas fa-shopping-cart"></i
+          ></a>          
           <a href="search.html"><i class="fas fa-search"></i></a>
           <input class="search-txt" type="text" placeholder="Search" />
         </div>
@@ -55,81 +57,96 @@
     </header>
     <main>
       <p class="login">your cart</p>
-      <section class="favoritelayout">
-        <img
-          src="images/women1.jpg"
-          class="img"
-          alt="blue jacket with white stripes"
-        />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
+      <section class="favoritelayout" id="cartItems">
+        <div class="cartItem">
+          <img
+            src="images/women1.jpg"
+            class="img"
+            id="cartImg"
+            alt="blue jacket with white stripes"
           />
-          <label for="blue" alt="color blue"></label>
-          <p class="info">SIZE:</p>
-          <input type="radio" name="size" class="size" value="m" id="m" />
-          <label for="m">M</label>
-          <button class="delete">
-            delete form cart <i class="fas fa-trash"></i>
-          </button>
+          <div class="small-item">
+            <p class="info">NAME: Ski blue mountain</p>
+            <p class="info" id="itemPrice">PRICE: $59.00</p>
+            <p class="info">COLOR:</p>
+            <div class="blueball"></div>
+            <input
+              type="radio"
+              name="color"
+              class="color"
+              value="blue"
+              id="blue"
+            />
+            <label for="blue" alt="color blue"></label>
+            <p class="info">SIZE:</p>
+            <input type="radio" name="size" class="size" value="m" id="m" />
+            <label for="m">M</label>
+            <button class="delete">
+              delete form cart <i class="fas fa-trash"></i>
+            </button>
+          </div>
         </div>
-        <img src="images/man1.jpg" class="img" alt="grey and blue stripes" />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <p class="info">SIZE:</p>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
+        <div class="cartItem">
+          <img
+            src="images/man1.jpg"
+            class="img"
+            id="cartImg"
+            alt="grey and blue stripes"
           />
-          <label for="blue" alt="color blue"></label>
-          <input type="radio" name="size" class="size" value="l" id="l" />
-          <label for="l">L</label>
-          <button class="delete">
-            delete form cart <i class="fas fa-trash"></i>
-          </button>
+          <div class="small-item">
+            <p class="info">NAME: Ski blue mountain</p>
+            <p class="info" id="itemPrice">PRICE: $59.00</p>
+            <p class="info">COLOR:</p>
+            <div class="blueball"></div>
+            <p class="info">SIZE:</p>
+            <input
+              type="radio"
+              name="color"
+              class="color"
+              value="blue"
+              id="blue"
+            />
+            <label for="blue" alt="color blue"></label>
+            <input type="radio" name="size" class="size" value="l" id="l" />
+            <label for="l">L</label>
+            <button class="delete">
+              delete form cart <i class="fas fa-trash"></i>
+            </button>
+          </div>
         </div>
-        <img
-          src="images/children2.jpg"
-          class="img"
-          alt="black and white jacket"
-        />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
+        <div class="cartItem">
+          <img
+            src="images/children2.jpg"
+            class="img"
+            id="cartImg"
+            alt="black and white jacket"
           />
-          <label for="blue" alt="color blue"></label>
-          <p class="info">SIZE:</p>
-          <input type="radio" name="size" class="size" value="s" id="s" />
-          <label for="s">S</label>
-          <button class="delete">
-            delete form cart <i class="fas fa-trash"></i>
-          </button>
-          <a href="checkout.html"
-            ><button class="input continuebtn">continue to checkout</button></a
-          >
+          <div class="small-item">
+            <p class="info">NAME: Ski blue mountain</p>
+            <p class="info" id="itemPrice">PRICE: $59.00</p>
+            <p class="info">COLOR:</p>
+            <div class="blueball"></div>
+            <input
+              type="radio"
+              name="color"
+              class="color"
+              value="blue"
+              id="blue"
+            />
+            <label for="blue" alt="color blue"></label>
+            <p class="info">SIZE:</p>
+            <input type="radio" name="size" class="size" value="s" id="s" />
+            <label for="s">S</label>
+            <button class="delete">
+              delete form cart <i class="fas fa-trash"></i>
+          </div>
         </div>
+        <p class="login">Total price: $177.00</p>
+          </button>
+            <a href="checkout.html"
+              ><button class="input continuebtn">
+                continue to checkout
+              </button></a>
       </section>
     </main>
     <footer>
@@ -140,5 +157,6 @@
       </ul>
       Copyright &copy;
     </footer>
+    <script src="js/deleteItem.js"></script>
   </body>
 </html>

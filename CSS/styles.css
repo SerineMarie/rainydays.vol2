@@ -96,6 +96,17 @@ nav a:hover {
   padding: 2%;
 }
 
+span {
+  position: relative;
+  margin-right: 450px;
+  margin-left: 290px;
+  margin-top: -85px;
+  float: right;
+  color: #0a3641;
+  font-weight: bold;
+  font-size: large;
+}
+
 /*main*/
 
 h1,
@@ -152,7 +163,7 @@ h1 {
   margin: 2%;
 }
 
-input {
+ input {
   border-radius: 25px;
   padding: 5px;
   margin: 5px;
@@ -160,7 +171,7 @@ input {
   background-color: #dddddd;
 }
 
-label {
+/*label {
   color: #741009;
   font-size: 1em;
   font-weight: bold;
@@ -205,6 +216,16 @@ p {
   font-weight: 500;
   text-transform: uppercase;
   padding-top: 15%;
+}
+
+.cartItem {
+  display: flex;
+  flex: 2;
+
+  /* justify-content: space-around; */
+  /* display: grid;
+  grid-template-areas: none; */
+  margin-bottom: 2%;
 }
 
 /*
@@ -314,6 +335,11 @@ p {
 .small-item {
   padding: 5%;
   flex: 2;
+}
+
+#cartImg {
+  width: 25%;
+  height: 55%;
 }
 
 .right-item {
