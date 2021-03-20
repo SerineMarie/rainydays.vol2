@@ -145,7 +145,7 @@ h1 {
   font-size: 12px;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +165,7 @@ label {
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
-}
+} */
 
 .loggedin {
   text-align: center;
@@ -206,6 +206,43 @@ p {
   text-transform: uppercase;
   padding-top: 15%;
 }
+
+/*
+#emailError,
+#passwordError,
+#nameError,
+#cardNrError,
+#expireDateError,
+#cvcError,
+#fullNameError,
+#addressError {
+  display: none;
+  color: red;
+  margin-left: 45%;
+}
+
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin: 5%;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+} */
+
+/* .numberbox,
+.namebox,
+.expirebox,
+.cvcbox,
+.buttonbox {
+  margin-bottom: 3%;
+} */
 
 .info {
   font-size: 1.5em;

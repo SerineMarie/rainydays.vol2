@@ -24,6 +24,7 @@
     <meta name="discription" content="Login page" />
     <meta name="viewport" content="width=device-width, initial-scale=1,0" />
     <link href="CSS/styles.css" rel="stylesheet" />
+    <link href="CSS/form.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -54,18 +55,45 @@
     </header>
     <main>
       <p class="login">log in</p>
-      <form action="loggedin.html" method="GET">
-        <label for="email">Your email address </label>
-        <input
-          type="email"
-          name="email"
-          placeholder="example@gmail.com"
-          class="input"
-        />
-        <label for="password">Your password </label>
-        <input type="password" name="password" class="input" />
-        <input type="submit" value="continue" class="input continuebtn" />
-      </form>
+      <div class="checkout">
+        <form action="loggedin.html" method="GET">
+          <div class="emailcheck">
+            <label for="email"
+              >Your email address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                class="input"
+              />
+            </label>
+            <div id="emailError">Please enter a valid email address</div>
+          </div>
+          <div class="passwordcheck">
+            <label for="password"
+              >Your password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input"
+            /></label>
+            <div id="passwordError">Password must be minimum 6 characters</div>
+          </div>
+
+          <a href="loggedin.html"
+            ><button
+              type="submit"
+              value="contiune"
+              id="submitted"
+              class="input continuebtn"
+            >
+              Continue
+            </button></a
+          >
+        </form>
+      </div>
       <p class="loggedin"></p>
     </main>
     <footer>
@@ -76,5 +104,6 @@
       </ul>
       Copyright &copy;
     </footer>
+    <script src="js/loginform.js"></script>
   </body>
 </html>

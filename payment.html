@@ -24,6 +24,7 @@
     <meta name="discription" content="Payment page" />
     <meta name="viewport" content="width=device-width, initial-scale=1,0" />
     <link href="CSS/styles.css" rel="stylesheet" />
+    <link href="CSS/form.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -53,19 +54,50 @@
     </header>
     <main>
       <p class="login">checkout</p>
-      <form>
-        <label for="name">card holder name</label>
-        <input type="text" name="name" />
-        <label for="number">card number</label>
-        <input type="number" name="number" />
-        <label for="expire-date">mm/yy</label>
-        <input type="month" name="expire-date" placeholder="01/24" />
-        <label for="number">cvc</label>
-        <input type="number" name="number" />
+      <form class="paymentForm">
+        <div class="namebox">
+          <label for="name" class="name"
+            >card holder name<input type="text" name="name" id="name"
+          /></label>
+          <div id="nameError">Please enter card holder name</div>
+        </div>
+
+        <div class="numberbox">
+          <label for="number" class="number"
+            >card number<input type="number" name="number" id="cardNr"
+          /></label>
+          <div id="cardNrError">Please enter 16 digits</div>
+        </div>
+
+        <div class="expirebox">
+          <label for="expire-date" class="expireDate"
+            >mm/yy<input
+              type="year"
+              name="expire-date"
+              placeholder="01/24"
+              id="expireDate"
+          /></label>
+          <div id="expireDateError">Please enter vaild a expire date</div>
+        </div>
+
+        <div class="cvcbox">
+          <label for="number" class="cvc"
+            >cvc
+            <input type="number" name="number" id="cvc" />
+          </label>
+          <div id="cvcError">Please enter 3 digits</div>
+        </div>
+        <a href="success.html"
+          ><button
+            type="submit"
+            value="contiune"
+            id="submitted"
+            class="input continuebtn"
+          >
+            Continue
+          </button></a
+        >
       </form>
-      <a href="success.html"
-        ><input type="submit" value="confirm payment" class="input continuebtn"
-      /></a>
       <p class="loggedin"></p>
     </main>
     <footer>
@@ -76,5 +108,6 @@
       </ul>
       Copyright &copy;
     </footer>
+    <script src="js/paymentform.js"></script>
   </body>
 </html>

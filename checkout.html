@@ -24,6 +24,7 @@
     <meta name="discription" content="Checkout page" />
     <meta name="viewport" content="width=device-width, initial-scale=1,0" />
     <link href="CSS/styles.css" rel="stylesheet" />
+    <link href="CSS/form.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -54,18 +55,40 @@
     <main>
       <p class="login">checkout</p>
       <form>
-        <label for="name">first and last name</label>
-        <input type="text" name="name" />
-        <label for="adress">shipping adress</label>
-        <input type="text" name="adress" />
-        <input type="text" name="adress" />
+        <div class="checkout">
+          <div class="namecheck">
+            <p class="name-price" id="name">Full Name</p>
+            <label for="name"
+              >fullname<input type="text" name="name" id="fullName1"
+            /></label>
+            <label for="name"
+              >lastname<input type="text" name="name" id="fullName2"
+            /></label>
+            <div id="fullNameError">Please enter your full name</div>
+          </div>
+
+          <div class="addresscheck">
+            <p class="name-price" id="address">shipping address</p>
+            <label for="address"
+              >Address<input type="text" name="address" id="address1"
+            /></label>
+            <label for="address"
+              >Postal code<input type="number" name="adress" id="address2"
+            /></label>
+            <div id="addressError">Please enter a vaild address</div>
+          </div>
+        </div>
+        <a href="payment.html"
+          ><button
+            type="submit"
+            value="contiune to payment"
+            id="submitted"
+            class="input continuebtn"
+          >
+            Continue to payment
+          </button></a
+        >
       </form>
-      <a href="payment.html"
-        ><input
-          type="submit"
-          value="continue to payment"
-          class="input continuebtn"
-      /></a>
       <p class="loggedin"></p>
     </main>
     <footer>
@@ -76,5 +99,6 @@
       </ul>
       Copyright &copy;
     </footer>
+    <script src="js/checkout.js"></script>
   </body>
 </html>
