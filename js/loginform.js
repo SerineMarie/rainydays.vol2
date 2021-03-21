@@ -17,13 +17,7 @@ function validation (event){
     } else {
         emailError.style.display = "block";
     }
-    if(passwordVaild && emailValid === true){
-        window.location = "loggedin.html"
-    } 
-    else {
-        passwordError.style.display = "block";
-        emailError.style.display = "block";
-    }
+    
 }
 
 addEventListener ("submit", validation)
