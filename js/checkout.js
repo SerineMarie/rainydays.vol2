@@ -13,19 +13,19 @@ const addressError = document.querySelector("#addressError")
 function checkout (event) {
     event.preventDefault();
 
-    if(fullName1.value.trim().lenght > 5){
+    if(fullName1.value.trim().length > 5){
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
         }
 
-    if(fullName2.value.trim().lenght > 1){
+    if(fullName2.value.trim().length > 1){
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
         }
     
-    if(address1.value.trim().lenght > 5){
+    if(address1.value.trim().length > 5){
         addressError.style.display = "none";
     } else{
         addressError.style.display = "block";
@@ -35,6 +35,14 @@ function checkout (event) {
     } else {
         addressError.style.display = "block";
     }
+
+    if(fullName1 && fullName2 && address1 && address2 === true){
+        window.location.href = "payment.html"
+    }
+
+    // window.location.href ="payment.html"
+
+
 }
 
 addEventListener ("submit", checkout);

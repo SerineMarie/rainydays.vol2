@@ -1,38 +1,34 @@
-// const addToCart = document.querySelectorAll("#addCart")
+const counter = document.querySelector("#counter")
+const addToCart = document.querySelector("#addToCart")
 
-// function cartEvent (event){
-//     for (let i = 0; i < addToCart.length; i++){
-//         const cartButton = addToCart[i]
-//     }
-//     const cartButton = event.target
-// }
+counter.innerHTML = "";
 
-// cartButton.addEventListener("click", addedToCart)
+let count = 0;
 
-const addCart = document.querySelector("#addCart")
-
-const jackets = [
-    {
-        name: "Ski blue mountain",
-        price: 59.00,
-        inCart: 0,
-
-    },
-    {
-        name: "Windfall",
-        price: 59.00,
-        inCart: 0,
-    },
-    {
-        name: "Hiking Queen",
-        price: 59.00,
-        inCart: 0,
+function counting(){
+    count++;
+    if(count >= 1){
+        counter.innerHTML = "1"
+        addToCart.innerHTML = "added to cart"
+        addToCart.style.color = "#ad422c"
+        addToCart.style.background = "#0a3641"
+    } else{
+        addToCart.innerHTML = "add to cart"
     }
-];
 
-function cartEvent (){
-    for (let i = 0; i < addCart.length; i++){
-        addCart[i].innerHTML = "Added to your shopping cart"
-
-    }
+    counter.innerHTML
 }
+
+addToCart.onclick = counting;
+
+
+const addTofave = document.querySelector("#addToFav")
+
+function addedToFav() {
+    addTofave.innerHTML = "added to favorite"
+    addTofave.style.color = "#ad422c"
+    addTofave.style.background = "#0a3641"
+    
+}
+
+addTofave.onclick = addedToFav;
