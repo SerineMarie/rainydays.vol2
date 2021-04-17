@@ -5,7 +5,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const  id = params.get("id");
 
-const url = 'http://serinetj.com/wp-json/wc/store/products/' + id
+const url = 'https://serinetj.com/wp-json/wc/store/products/' + id
 
 
 
