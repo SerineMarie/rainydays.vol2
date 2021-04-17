@@ -35,4 +35,3 @@ function createHTML(product){
     })
 }
 
-{/* <p class="regprice">Original PRICE: £${json.prices.regular_price}</p> */}

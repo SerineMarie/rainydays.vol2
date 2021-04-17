@@ -69,27 +69,4 @@ const fetchProduct = async () => {
 
 
 
-// async function getItem (){
-//     try{
-//         const response = await fetch (url2);
-//         const json = await response.json();
-
-//         console.log(json);
-
-//         itemContainer.innerHTML= "";
-        
-//         const jacket = json.getItem; 
-        
-        
-
-       
-
-
-//     } catch (error){
-//         console.log(error);
-//     }
-// }
-
-// getItem();
-
 fetchProduct()
