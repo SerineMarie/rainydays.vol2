@@ -188,6 +188,11 @@ a {
   text-decoration: none;
 }
 
+.regprice {
+  text-decoration: line-through;
+  color: #0a3641;
+}
+
 .category,
 .ball {
   font-size: 1.2em;

@@ -1,4 +1,4 @@
-const url = "https://serinetj.com/wp-json/wc/store/products";
+const url = "http://serinetj.com/wp-json/wc/store/products";
 const productsContainer = document.querySelector (".productsContainer");
 
 async function getProducts (){
@@ -28,10 +28,11 @@ function createHTML(product){
             
                                         <img class="img" src="${product.images[0].src}" alt="${product.alt}">
                                         <p class="name-price"> ${product.name}</p>
-                                            <p class="name-price">£${product.prices.price}</p>
+                                        <p class="name-price">£${product.prices.price}</p>
                                     </a>
                                     <div class="line"></div>
                                 </div>`;
     })
 }
 
+{/* <p class="regprice">Original PRICE: £${json.prices.regular_price}</p> */}

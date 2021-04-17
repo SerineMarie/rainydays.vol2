@@ -21,6 +21,7 @@ const fetchProduct = async () => {
                                     <div class="small-item">
                                         <p class="info">${json.name}</p>
                                         <p class="info">PRICE: £${json.prices.price}</p>
+                                        <p class="regprice">Original PRICE: £${json.prices.regular_price}</p>
                                         <p class="info">COLOR:</p>
                                         <div class="yellowball"></div>
                                         <input
