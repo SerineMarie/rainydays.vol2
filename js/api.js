@@ -1,4 +1,4 @@
-const url = "http://serinetj.com/wp-json/wc/store/products";
+const url = "https://serinetj.com/wp-json/wc/store/products";
 const productsContainer = document.querySelector (".productsContainer");
 
 async function getProducts (){
