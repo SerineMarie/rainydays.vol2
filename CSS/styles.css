@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #dddddd;
 }
 
 /*header*/
@@ -136,6 +137,18 @@ h1 {
   display: inline-block;
 }
 
+.products {
+  margin-top: 15%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.line {
+  border: 2px solid #707070;
+  margin-bottom: -35%;
+  margin-top: 20%;
+}
+
 .name-price,
 .saleprice {
   font-family: Georgia, Times, serif;
@@ -169,6 +182,24 @@ p {
   color: #741009;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.category,
+.ball {
+  font-size: 1.2em;
+  width: 35px;
+  height: 35px;
+  background-color: #cb9a21;
+  border-radius: 50%;
+  margin-left: 2%;
+}
+
+.description {
+  border: 2px solid #707070;
 }
 
 .continuebtn {
